@@ -315,12 +315,16 @@ h2 {
 .scene {
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  z-index: 2;
+}
 
 .wrap_text {
   position: relative;
   width: 360px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 4;
+}
 
 .text {
   padding: 45px 15px;
@@ -619,9 +623,9 @@ h2 {
     z-index: 10 !important; }
   .reclame .scene .item_2 {
     position: absolute;
-    left: 14% !important;
-    top: -13% !important;
-    z-index: 20; }
+    left: 11% !important;
+    top: -7% !important;
+    z-index: 9; }
   .reclame .scene .item_3 {
     position: absolute;
     left: -7% !important;
@@ -743,7 +747,43 @@ footer {
   footer .image_foot {
     position: absolute;
     right: 0;
-    bottom: 95px; }
+    bottom: 95px;
+    width: 710px;
+    height: 370px;
+  }
+    .image_foot__inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+      .image_foot__inner:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 710px;
+        height: 370px;
+        background-position: right bottom;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../img/footer__bg_1.svg);
+      }
+      .image_foot__inner:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 710px;
+        height: 370px;
+        background-position: right bottom;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../img/footer__bg_2.svg);
+
+        opacity: 0;
+      }
 
 .main_menu {
   margin-bottom: 115px; }
@@ -1567,4 +1607,45 @@ body.inner img {
               font-size: 20px;
             }
 
+/* end Case page */
+
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes spin-ccw {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(-360deg);}
+}
+.btn_circle:before,
+.mission .info .carousel_text:before,
+.reclame .info .carousel_text:before {
+  animation: spin-ccw 100s linear 0s infinite;
+}
+
+.about svg,
+.mission svg,
+.development svg,
+.promotion svg,
+.reclame svg,
+.portfolio svg,
+.callback svg {
+  animation: spin 100s linear 0s infinite;
+  position: absolute;
+  width: 1220px;
+  height: 1220px;
+  z-index: 1;
+  top: -292px;
+  left: 50%;
+  margin-left: -610px;
+}
+
+.about svg {
+  top: -272px;
+}
+.mission svg {
+  top: 0;
+}
 
