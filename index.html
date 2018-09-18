@@ -1149,7 +1149,17 @@
 				<div class="text">
 					<h2>Есть интересный проект?</h2>
 					<p class="desc">Напишите нам</p>
-					<a href="" class="btn">Отправить</a>
+					<form action="#" method="post" class="callback-form">
+						<input name="callback__name" type="text" class="callback__input" required="" placeholder="Ваше имя">
+						<input name="callback__tel" type="tel" class="callback__input" required="" placeholder="Ваш телефон">
+						<input name="callback__email" type="email" class="callback__input" required="" placeholder="Ваш телефон">
+						
+						<input name="callback__submit" type="submit" class="btn" value="Отправить">
+
+						<div class="form__policy">
+							Нажимая кнопку "Отправить", вы соглашаетесь с условиями конфиденциальности
+						</div>
+					</form>
 				</div>
 				<div class="info"></div>
 			</div>
@@ -1398,7 +1408,7 @@
 			</div>
 		</div>
 		<div class="image_foot">
-			<div class="image_foot__inner">
+			<div class="image_foot__inner samara">
 				
 			</div>
 		</div>
@@ -1410,11 +1420,8 @@
 	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/parallax.min.js"></script>
-	<!-- <script src="js/wow.min.js"></script> -->
-	
-	<script>
 
-	// Pretty simple huh?
+	<script>
 	var scene_1 = document.getElementById('scene_1');
 	var parallax = new Parallax(scene_1);
 
@@ -1441,9 +1448,6 @@
 
 	</script>
 
-	<script>
-		new WOW().init();
-	</script>
 
 	<script>
 		var menu_selector = ".left_menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 

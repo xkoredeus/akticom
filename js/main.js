@@ -22,6 +22,9 @@ $(function() {
 		$('.content_tabs').css("opacity", "0");
 		$('.content_tabs_1').css("display", "block");
 		$('.content_tabs_1').animate({opacity: 1}, 300);
+		$('.image_foot__inner').addClass('samara');
+		$('.image_foot__inner').removeClass('moscow');
+		
 	});
 
 	$('.link_tabs_2').on('click', function() {
@@ -30,6 +33,8 @@ $(function() {
 		$('.content_tabs').css("opacity", "0");
 		$('.content_tabs_2').css("display", "block");
 		$('.content_tabs_2').animate({opacity: 1}, 300);
+		$('.image_foot__inner').addClass('moscow');
+		$('.image_foot__inner').removeClass('samara');
 	});
 
 	$('.slider-for').slick({
@@ -71,6 +76,3 @@ $(function() {
 	});
 
 });
-
-
- 
