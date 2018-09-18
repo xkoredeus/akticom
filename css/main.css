@@ -229,7 +229,9 @@ body {
   left: -284px;
   top: 415px;
   z-index: 999;
-  }
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg); }
   .left_menu li {
     display: inline-block;
     height: 200px;
