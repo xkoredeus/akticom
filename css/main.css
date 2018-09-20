@@ -2128,7 +2128,7 @@ body.inner img {
         text-transform: uppercase;
       }
 .section__design-steps {
-  background: #26223b url(../img/design/design__stages_bg.png) no-repeat 50% top / 120%;
+  background: #26223b url(../img/design/design__stages_bg.png) no-repeat 50% top / cover;
   padding: 170px 0 50px;
 }
   .design__steps-ttl {
