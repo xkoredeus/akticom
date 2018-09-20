@@ -1892,6 +1892,7 @@ body.inner img {
   color: #fff;
 }
 
+/*Design Page */
 .design-info__wrp {
   background-color: #26223b;
   padding-top: 20px;
@@ -1976,6 +1977,7 @@ body.inner img {
   background-color: #26223b;
   color: #fff;
 }
+
   .design__case-ttl {
     margin-bottom: 50px;
   }
@@ -2091,6 +2093,9 @@ body.inner img {
 .design__case-wrp {
   position: relative;
 }
+  .design__tabs-content-item_right {
+    position: relative;
+  }
   .desing__case-slider-nav .slick__arrow {
     position: absolute;
     bottom: -25px;
