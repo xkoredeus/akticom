@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="" type="image/x-icon">
+
+	<!-- <link rel="stylesheet" href="css/parallax.css"> -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--[if lte IE 8]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body class="inner about-page">
+
+	<header>
+		<div class="top_head">
+			<div class="wrapper">
+				<a href="" class="link_download"><span>Скачать презентацию</span></a>
+				<a href="" class="link_phone">+7 (927) <span>111 11 11</span></a>
+				<a href="" class="link_mail"><span>sales@aktikom.ru</span></a>
+			</div>
+		</div>
+			<div class="wrap_head">
+				<div class="wrapper">
+					<div class="logo">
+						<a href="index.html"><img src="img/case/logo_black.png" alt="logo.png" /></a>
+					</div>
+					<nav class="menu">
+						<ul>
+							<li><a href="">Главная</a></li>
+							<li class="active"><a href="">Портфолио</a></li>
+							<li><a href="">Услуги</a></li>
+							<li><a href="">Отзывы</a></li>
+							<li><a href="">Прайс</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Бекстейдж</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="about-info__wrp">
+		<div class="wrapper">
+			<section class="about-info__text">
+				<h1 class="about-info__text-ttl">О компании</h1>
+				<p class="about-info__text-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, eaque ut rem quis itaque, porro, consectetur veritatis, officiis laborum distinctio ad amet. Mollitia officiis dicta odit omnis, assumenda similique qui.</p>
+				<p class="about-info__text-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia modi blanditiis iste aspernatur nihil placeat cumque laboriosam. Praesentium odio vel iure, illo ratione quibusdam nulla sint repellendus, dolore voluptatibus. Natus.</p>
+			</section>
+			<div class="about-info__adv fr">
+				<div class="about-info__adv-item fi-4">
+					<div class="about-info__adv-item-ttl">
+						30
+					</div>
+					<div class="about-info__adv-item-descr">
+						Сотрудников в штате
+					</div>
+				</div>
+				<div class="about-info__adv-item fi-4">
+					<div class="about-info__adv-item-ttl">
+						Топ5
+					</div>
+					<div class="about-info__adv-item-descr">
+						По созданию и продвижению в Самаре
+					</div>
+				</div>
+				<div class="about-info__adv-item fi-4">
+					<div class="about-info__adv-item-ttl">
+						500
+					</div>
+					<div class="about-info__adv-item-descr">
+						Проектов реализовано
+					</div>
+				</div>
+				<div class="about-info__adv-item fi-4">
+					<div class="about-info__adv-item-ttl">
+						10
+					</div>
+					<div class="about-info__adv-item-descr">
+						Лет опыт работы
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="about-adv">
+		<div class="about-adv__item about-adv__item_1">
+			<a href="#" class="btn about-adv__item-btn">Перейти к проекту</a>
+		</div>
+		<div class="about-adv__item about-adv__item_2">
+			Актиком - энергичная, активная команда, предлагающая свой творческий подход и идеи, отраслевые знания и навыки для достижения высоких результатов в развитии вашего бизнеса.
+		</div>
+		.about-adv__item
+	</section>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/parallax.min.js"></script>
+	
+	<script>
+
+	// Pretty simple huh?
+	var scene_1 = document.getElementById('scene_1');
+	var parallax = new Parallax(scene_1);
+
+	var scene_2 = document.getElementById('scene_2');
+	var parallax = new Parallax(scene_2);
+
+	var scene_3 = document.getElementById('scene_3');
+	var parallax = new Parallax(scene_3);
+
+	var scene_4 = document.getElementById('scene_4');
+	var parallax = new Parallax(scene_4);
+
+	var scene_5 = document.getElementById('scene_5');
+	var parallax = new Parallax(scene_5);
+
+	var scene_6 = document.getElementById('scene_6');
+	var parallax = new Parallax(scene_6);
+
+	var scene_7 = document.getElementById('scene_7');
+	var parallax = new Parallax(scene_7);
+
+	var scene_8 = document.getElementById('scene_8');
+	var parallax = new Parallax(scene_8);
+
+	</script>
+
+	<script>
+	var menu_selector = ".left_menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
+	function onScroll(){
+		var scroll_top = $(document).scrollTop();
+		$(menu_selector + " a").each(function(){
+			var hash = $(this).attr("href");
+			var target = $(hash);
+			if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+				$(menu_selector + " a.active").removeClass("active");
+				$(this).addClass("active");
+			} else {
+				$(this).removeClass("active");
+			}
+		});
+	}
+		$(document).on("scroll", onScroll);
+		$("a[href^=#]").click(function(e){
+			e.preventDefault();
+			$(document).off("scroll");
+			$(menu_selector + " a.active").removeClass("active");
+			$(this).addClass("active");
+			var hash = $(this).attr("href");
+			var target = $(hash);
+			$("html, body").animate({
+			    scrollTop: target.offset().top
+			}, 800, function(){
+				window.location.hash = hash;
+				$(document).on("scroll", onScroll);
+			});
+		});
+	</script>
+
+</body>
+</html>
