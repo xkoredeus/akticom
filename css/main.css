@@ -2151,6 +2151,7 @@ body.inner img {
       width: calc(100%/5);
       text-align: center;
       margin: 0 15px;
+      background-color: #3d3d3d0d;
     }
       .design__steps-item-img {
         position: relative;
