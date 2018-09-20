@@ -86,7 +86,7 @@ $(function() {
 		prevArrow: $('.slick__arrow-prev'),
 		nextArrow: $('.slick__arrow-next'),
 	});
-	
+
 	$(document).ready(function () {
 		$(".tabs-content__item").hide();
 		$(".tabs__container div.tabs-content__item:first-child").show();
@@ -96,7 +96,10 @@ $(function() {
 	            var numLi = thisLi.index();
 	            thisLi.addClass('active').siblings().removeClass('active');
 	            thisLi.parent().next().children('div').hide().eq(numLi).fadeIn('slow');
-	        }
+	            $('.design__case-slider').slick('reinit');
+
+	        };
+
 	    });
 	});
 });
