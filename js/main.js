@@ -71,8 +71,32 @@ $(function() {
 		dots: true,
 		appendDots:$('.slick__dots-wrp'),
 		fade: true,
+		speed: 1200,
 		prevArrow: $('.slick__arrow-prev_white'),
 		nextArrow: $('.slick__arrow-next_white'),
 	});
 
+	$(".design__case-slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		fade: true,
+		speed: 1200,
+		prevArrow: $('.slick__arrow-prev'),
+		nextArrow: $('.slick__arrow-next'),
+	});
+	
+	$(document).ready(function () {
+		$(".tabs-content__item").hide();
+		$(".tabs__container div.tabs-content__item:first-child").show();
+	    $('ul.tabs__list > li').click(function () {
+	        if (!($(this).hasClass('active'))) {
+	            var thisLi = $(this);
+	            var numLi = thisLi.index();
+	            thisLi.addClass('active').siblings().removeClass('active');
+	            thisLi.parent().next().children('div').hide().eq(numLi).fadeIn('slow');
+	        }
+	    });
+	});
 });
