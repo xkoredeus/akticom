@@ -102,4 +102,14 @@ $(function() {
 
 	    });
 	});
+	$(".about-adv__item_8").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		fade: true,
+		speed: 1200,
+		prevArrow: $('.about-adv__arrows-left'),
+		nextArrow: $('.about-adv__arrows-right'),
+	});
 });
