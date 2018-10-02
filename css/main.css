@@ -3244,6 +3244,17 @@ body.inner img {
       -o-transform: rotate(-90deg);
       transform: rotate(-90deg);
     }
+  .about-team__item-info-pers-wrp{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    max-width: 300px;
+  }
     .about-team__item-info-pers {
       display: -webkit-flex;
       display: -moz-flex;
@@ -3254,8 +3265,11 @@ body.inner img {
       align-items: center;
       justify-content: space-between;
       position: relative;
+      width: 125px;
     }
-    .about-team__item-info-pers:first-child {
+
+    .about-team__item-info-pers:nth-child(even) {
+      margin-left: 90px;
       margin-bottom: 20px;
     }
       .about-team__item-info-pers-ttl {
@@ -3417,11 +3431,7 @@ body.inner img {
     .about-team__item_left .about-team__item-descr:after {
       display: none;
     }
-/* .about-team__item:not(:first-child) {
-  -webkit-transform: translateY(-70px);
-  -ms-transform: translateY(-70px);
-  -o-transform: translateY(-70px);
-  transform: translateY(-70px);
-  position: relative;
-  z-index: 2;
-} */
+.about-team__item:not(:first-child) {
+  margin-top: -40px;
+}
+
