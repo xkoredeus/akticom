@@ -122,6 +122,7 @@ body {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   text-align: center;
+  letter-spacing: 2px;
   display: block;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
@@ -849,7 +850,7 @@ footer {
     color: #fff;
     text-align: center;
     width: 65%;
-    margin: 0 auto; }
+    margin: 0 auto 50px; }
     footer h2:before {
       display: none; }
   footer h3 {
@@ -1339,7 +1340,7 @@ footer {
         font-size: 39px;
         font-family: 'Avenir Next Cyr Bold';
         display: block;
-        letter-spacing: 5px;
+        letter-spacing: 3.5px;
         margin: 10px 0 40px; }
     .promotion .info .carousel_promotion .text_carousel {
       font-size: 18px;
@@ -1889,8 +1890,9 @@ body.inner img {
   font-family: 'Avenir Next Cyr Bold';
   text-transform: uppercase;
   line-height: 1.5;
+  letter-spacing: 2px;
   color: #fff;
-  margin: 0 0 25px;
+  margin: 0 0 35px;
 }
 .section_inner {
   padding: 60px 0;
@@ -1988,6 +1990,7 @@ body.inner img {
 
   .design__case-ttl {
     margin-bottom: 50px;
+    letter-spacing: 1px;
   }
     .design__case-ttl span {
       color: #58d9ff;
@@ -2411,6 +2414,7 @@ body.inner img {
     text-transform: uppercase;
     line-height: 1.5;
     color: #fff;
+    letter-spacing: 2px;
     margin-bottom: 25px;
     text-align: center;
     position: relative;
@@ -2561,6 +2565,7 @@ body.inner img {
       font-size: 18px;
       color: #fff;
       line-height: 1.4;
+      letter-spacing: 1px;
       text-align: center;
       margin: 25px auto;
     }
@@ -3181,9 +3186,19 @@ body.inner img {
 .section__about-team {
   padding-top: 100px;
   background-color: #26223d;
+  position: relative;
 }
+  .section__about-team:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+  }
   .section__about-team .section__ttl {
     text-align: center;
+    letter-spacing: 3.5px;
   }
   .about-team__subttl {
     text-align: center;
@@ -3194,7 +3209,7 @@ body.inner img {
     margin: 0 auto 45px;
     line-height: 1.4;
   }
-
+  
 .about-team__item {
   width: 100%;
   display: -webkit-flex;
@@ -3221,14 +3236,14 @@ body.inner img {
     align-items: flex-end;
     position: relative;
     z-index: 4;
-    margin-bottom: 40px;
+    margin-bottom: -30px;
   }
   /* .about-team__item_right .about-team__item-info {
     justify-content: flex-end;
   } */
     .about-team__item-info-ttl {
       font-family: 'Avenir Next Cyr Bold';
-      font-size: 26px;
+      font-size: 24px;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       display: -webkit-flex;
@@ -3250,11 +3265,33 @@ body.inner img {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
     -ms-align-items: flex-end;
     align-items: flex-end;
-    max-width: 300px;
+    max-width: 370px;
   }
+    .about-team__item:first-child .about-team__item-info-pers-wrp {
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+    }
+    .about-team__item_right .about-team__item-info-pers-wrp {
+      justify-content: flex-end;
+      -ms-align-items: flex-end;
+      align-items: flex-end;
+    }
+    .about-team__item_left .about-team__item-info-pers-wrp {
+      justify-content: flex-start;
+      -ms-align-items: flex-start;
+      align-items: flex-start;
+    }
     .about-team__item-info-pers {
       display: -webkit-flex;
       display: -moz-flex;
@@ -3268,16 +3305,30 @@ body.inner img {
       width: 125px;
     }
 
-    .about-team__item-info-pers:nth-child(even) {
-      margin-left: 90px;
+    .about-team__item-info-pers:nth-child(1),
+    .about-team__item-info-pers:nth-child(2) {
+      margin-right: 90px;
       margin-bottom: 20px;
+    }
+    .about-team__item_right .about-team__item-info-pers:nth-child(2) {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+    .about-team__item_right .about-team__item-info-pers:nth-child(3) {
+      margin-left: 90px;
+      margin-right: 0;
+    }
+    .about-team__item_right .about-team__item-info-pers:nth-child(1) {
+      margin-left: 150px;
+      margin-right: 0;
     }
       .about-team__item-info-pers-ttl {
         font-family: 'Avenir Next Cyr Bold';
         font-size: 17px;
         letter-spacing: 1.5px;
         position: absolute;
-        left: -100px;
+        left: -83px;
         height: 20px;
         width: 100%;
         -webkit-transform: rotate(270deg);
@@ -3312,11 +3363,6 @@ body.inner img {
       background: linear-gradient(135deg, rgb(248,175,169) 0%,rgb(209,46,189) 47%,rgb(209,46,189) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8afa9', endColorstr='#d12ebd',GradientType=1 );
       z-index: 2;
-      /* background: rgb(156,44,208);
-      background: -moz-linear-gradient(-45deg, rgb(156,44,208) 0%, rgb(99,51,173) 29%, rgb(99,51,173) 100%);
-      background: -webkit-linear-gradient(-45deg, rgb(156,44,208) 0%,rgb(99,51,173) 29%,rgb(99,51,173) 100%);
-      background: linear-gradient(135deg, rgb(156,44,208) 0%,rgb(99,51,173) 29%,rgb(99,51,173) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c2cd0', endColorstr='#6333ad',GradientType=1 ); */
     }
     .about-team__item-descr:after {
       content: '';
@@ -3355,8 +3401,17 @@ body.inner img {
     }
       .about-team__item-ask {
         position: relative;
-        margin-left: 25px;
+        margin-left: 45px;
       }
+        .about-team__item-ask:before {
+          content: '';
+          position: absolute;
+          width: 18px;
+          height: 15px;
+          left: -20px;
+          top: 2px;
+          background: url(../img/about/about__pencil-img_black.png) no-repeat 50% 50% / contain;
+        }
         .about-team__item-ask:after {
            content: '';
            position: absolute;
@@ -3407,9 +3462,11 @@ body.inner img {
     margin-left: -280px;
     bottom: -280px;
   }
+.about-team__item_left .about-team__item-info,
 .about-team__item_left .about-team__item-info-ttl {
   order: 2;
 }
+
   .about-team__item_left .about-team__item-info-pers-img {
     -webkit-box-shadow: -4px -4px 17px 1px rgba(0,0,0,0.28);
     -moz-box-shadow: -4px -4px 17px 1px rgba(0,0,0,0.28);
@@ -3417,7 +3474,7 @@ body.inner img {
   }
   .about-team__item_left .about-team__item-info-pers-ttl {
     left: auto;
-    right: -100px
+    right: -83px
   }
     .about-team__item_left .about-team__item-descr:before {
       left: auto;
@@ -3435,3 +3492,323 @@ body.inner img {
   margin-top: -40px;
 }
 
+
+.about-team__item:nth-child(2) .about-team__item-descr,
+.about-team__item:nth-child(2) .about-team__item-descr a {
+  color: #000;
+  font-family: 'Avenir Next Cyr Regular';
+}
+.about-team__item:nth-child(2) .about-team__item-soc {
+  border-color: #000;
+}
+.about-team__item:nth-child(2) .about-team__item-ask:after {
+  background-color: #000;
+}
+.about-team__item:nth-child(2) .about-team__item-ask:before {
+  background: url(../img/about/about__pencil-img_black.png) no-repeat 50% 50% / contain;
+}
+.about-team__item:nth-child(2) .about-team__item-descr:before {
+  background: rgb(254,254,254);
+  background: -moz-linear-gradient(left, rgba(254,254,254,1) 1%, rgba(220,220,220,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(254,254,254,1) 1%,rgba(220,220,220,1) 100%);
+  background: linear-gradient(to right, rgba(254,254,254,1) 1%,rgba(220,220,220,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dcdcdc',GradientType=1 );
+}
+
+
+.about-team__item:nth-child(3) .about-team__item-descr:before{
+  background: rgb(156,44,208);
+  background: -moz-linear-gradient(left, rgba(156,44,208,1) 0%, rgba(96,50,172,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(156,44,208,1) 0%,rgba(96,50,172,1) 100%);
+  background: linear-gradient(to right, rgba(156,44,208,1) 0%,rgba(96,50,172,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c2cd0', endColorstr='#6032ac',GradientType=1 );
+}
+.about-team__item:nth-child(4) .about-team__item-descr:before{
+  background: rgb(19,183,202);
+  background: -moz-linear-gradient(left, rgba(19,183,202,1) 0%, rgba(32,94,153,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(19,183,202,1) 0%,rgba(32,94,153,1) 100%);
+  background: linear-gradient(to right, rgba(19,183,202,1) 0%,rgba(32,94,153,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13b7ca', endColorstr='#205e99',GradientType=1 );
+}
+.about-team__item:nth-child(5) .about-team__item-descr:before{
+  background: rgb(248,175,168);
+  background: -moz-linear-gradient(left, rgba(248,175,168,1) 0%, rgba(222,88,184,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(248,175,168,1) 0%,rgba(222,88,184,1) 100%);
+  background: linear-gradient(to right, rgba(248,175,168,1) 0%,rgba(222,88,184,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8afa8', endColorstr='#de58b8',GradientType=1 );
+}
+.about-team__item:nth-child(6) .about-team__item-descr:before{
+  background: rgb(100,165,229);
+  background: -moz-linear-gradient(left, rgba(100,165,229,1) 27%, rgba(100,165,229,1) 27%, rgba(158,55,224,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(100,165,229,1) 27%,rgba(100,165,229,1) 27%,rgba(158,55,224,1) 100%);
+  background: linear-gradient(to right, rgba(100,165,229,1) 27%,rgba(100,165,229,1) 27%,rgba(158,55,224,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64a5e5', endColorstr='#9e37e0',GradientType=1 );  
+}
+.about-team__item:nth-child(7) .about-team__item-descr:before{
+  background: rgb(254,61,106);
+  background: -moz-linear-gradient(left, rgba(254,61,106,1) 0%, rgba(255,106,50,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(254,61,106,1) 0%,rgba(255,106,50,1) 100%);
+  background: linear-gradient(to right, rgba(254,61,106,1) 0%,rgba(255,106,50,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe3d6a', endColorstr='#ff6a32',GradientType=1 );
+}
+.about-team__item:nth-child(8) .about-team__item-descr:before{
+  background: rgb(18,204,229);
+  background: -moz-linear-gradient(left, rgba(18,204,229,1) 1%, rgba(33,97,168,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(18,204,229,1) 1%,rgba(33,97,168,1) 100%);
+  background: linear-gradient(to right, rgba(18,204,229,1) 1%,rgba(33,97,168,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12cce5', endColorstr='#2161a8',GradientType=1 );
+}
+.section__about-rev {
+  color: #000;
+}
+  .section__about-rev .section__ttl {
+    text-align: center;
+    letter-spacing: 3.5px;
+    color: #000;
+  }
+  .about-rev__inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+    .about-rev__item {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+      .about-rev__item_center {
+        width: 48%;
+      }
+      .about-rev__item_left,
+      .about-rev__item_right {
+        width: 24%;
+      }
+        .about-rev__item-ttl {
+          font-family: 'Avenir Next Cyr Bold';
+          margin-top: 20px;
+          line-height: 1.4;
+        }
+        .about-rev__item-descr {
+          font-family: 'Avenir Next Cyr Regular';
+          line-height: 1.4;
+        }
+        .about-rev__item-img {
+          min-height: 340px;
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          border-radius: 6px;
+        }
+        .about-rev__item_left .about-rev__item-img,
+        .about-rev__item_right .about-rev__item-img {
+          margin-top: 20px;
+
+        }
+          .about-rev__item_left .about-rev__item-img:before,
+          .about-rev__item_right .about-rev__item-img:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #ad5ad766;
+            border-radius: 6px;
+            opacity: 0;
+            -moz-transition: all 0.5s ease;
+            -webkit-transition-property: all;
+            -webkit-transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease;
+          }
+        .about-rev__item_center .about-rev__item-img {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          justify-content: center;
+          -ms-align-items: center;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+          .about-rev__item .video__play-img {
+            width: 95px;
+            height: 95px;
+          }
+          .about-rev__item_center .about-rev__item-img:hover .video__play-img {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+          .about-rev__item:hover .about-rev__item-img:before{
+            opacity: 1;
+          }
+          .about-rev__item_left:hover .about-rev__item-img,
+          .about-rev__item_right:hover .about-rev__item-img {
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            transform: scale(1.05);
+          }
+.about-bot__wrp {
+  position: relative;
+  background: url(../img/about/about-bottom__bg.png) no-repeat 50% 0% / cover;
+}
+  .about-bot__wrp:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: rgb(30,87,153);*/
+    background-image: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,1) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 100%);
+    background-image: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+  }
+.partners {
+  position: relative;
+}
+  .partners__inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+    .partners .section__ttl {
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 3.5px;
+    }
+    .partners__btn-wrp {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+      .partners__btn {
+        min-width: 246px;
+        width: auto;
+        height: 58px;
+        padding: 0 25px;
+        background: rgb(179,90,218);
+        background: -moz-linear-gradient(-45deg, rgba(179,90,218,1) 0%, rgba(122,98,185,1) 100%);
+        background: -webkit-linear-gradient(-45deg, rgba(179,90,218,1) 0%,rgba(122,98,185,1) 100%);
+        background: linear-gradient(135deg, rgba(179,90,218,1) 0%,rgba(122,98,185,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b35ada', endColorstr='#7a62b9',GradientType=1 );
+        border-top: 1px solid #ffffff;
+        color: #fff;
+        font-size: 13px;
+        
+        -webkit-box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+        margin: 20px auto 30px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        margin: 20px 30px 30px;
+      }
+
+  .about-offer__item {
+      max-width: 620px;
+      padding: 60px 45px;
+      background: rgb(254,70,94);
+      background: -moz-linear-gradient(-45deg, rgb(254,70,94) 1%, rgb(255,136,10) 100%);
+      background: -webkit-linear-gradient(-45deg, rgb(254,70,94) 1%,rgb(255,136,10) 100%);
+      background: linear-gradient(135deg, rgb(254,70,94) 1%,rgb(255,136,10) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe465e', endColorstr='#ff880a',GradientType=1 );
+      border-radius: 6px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+      justify-content: flex-end;
+      -ms-align-items: center;
+      align-items: center;
+      margin: 0 auto;
+  }
+    .about-offer__item-cnt {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+    }
+      .about-offer__item-ttl {
+        font-size: 25px;
+        font-family: 'Avenir Next Cyr Bold';
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        color: #fff;
+        margin-bottom: 25px;
+        text-align: center;
+        position: relative;
+      }
+        .about-offer__item-ttl:after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          margin-left: -13px;
+          bottom: -14px;
+          width: 26px;
+          height: 1px;
+          background-color: #fff;
+        }
+      .about-offer__item-descr {
+        font-family: 'Avenir Next Cyr Regular';
+        color: #fff;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .about-offer__item-submit {
+        cursor: pointer;
+        background: #fff;
+        border-top: 1px solid #ffffff;
+        color: #000;
+        -webkit-box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+        margin: 40px auto 20px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+      }
