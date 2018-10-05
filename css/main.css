@@ -4092,3 +4092,10 @@ body.inner img {
         opacity: .3;
         z-index: 1;
       }
+.supply-price__wrp {
+  background: url(../img/supply/supply-price__bg.jpg) no-repeat 50% 50% / cover;
+}
+  .supply-price .section__ttl {
+    text-align: center;
+    margin-bottom: 50px;
+  }
