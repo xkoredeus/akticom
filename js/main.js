@@ -112,4 +112,13 @@ $(function() {
 		prevArrow: $('.about-adv__arrows-left'),
 		nextArrow: $('.about-adv__arrows-right'),
 	});
+
+	$(".supply-cms__cnt").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		prevArrow: $('.slick__arrow-prev_white'),
+		nextArrow: $('.slick__arrow-next_white'),
+	});
 });
