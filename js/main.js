@@ -1,8 +1,4 @@
 $(function() {
-
-	
-
-
 	$(".carousel_head").owlCarousel({
 		loop: true,
 		items: 1,
@@ -111,5 +107,26 @@ $(function() {
 		speed: 1200,
 		prevArrow: $('.about-adv__arrows-left'),
 		nextArrow: $('.about-adv__arrows-right'),
+	});
+
+	$(".supply-cms__cnt").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		prevArrow: $('.slick__arrow-prev_white'),
+		nextArrow: $('.slick__arrow-next_white'),
+	});
+	//Стоимость продвижения
+	$('.supply-price__item-more').click(function(){
+		$(this).parent('.supply-price__item').toggleClass('active');
+	});
+	$('.supply-price__item-info-hide').click(function(){
+		$(this).parent().parent('.supply-price__item').toggleClass('active');
+	});
+	//Блок с вопросами
+	$('.supply-quest__item-descr').slideUp();
+	$('.supply-quest__item-ttl').on('click', function(){
+		$(this).parent('.supply-quest__item').toggleClass('active').find('.supply-quest__item-descr').slideToggle('slow');
 	});
 });
