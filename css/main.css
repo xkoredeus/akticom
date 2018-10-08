@@ -3394,6 +3394,15 @@ body.inner img {
         -moz-box-shadow: 4px 4px 17px 1px rgba(0,0,0,0.28);
         box-shadow: 4px 4px 17px 1px rgba(0,0,0,0.28);
       }
+      .about-team__item-info-pers:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-box-shadow: 4px 4px 17px 1px rgba(0,0,0,0.58);
+        -moz-box-shadow: 4px 4px 17px 1px rgba(0,0,0,0.58);
+        box-shadow: 4px 4px 17px 1px rgba(0,0,0,0.58);
+      }
   .about-team__item-descr {
     width: 50%;
     padding: 150px 40px;
@@ -3757,11 +3766,31 @@ body.inner img {
     padding-left:20px;
     padding-right: 20px;
     margin-bottom: 30px;
+    position: relative;
   }
+    .partners__inner:before,
+    .partners__inner:after {
+      position: absolute;
+      content: '+';
+      font-size: 41px;
+      font-family: 'Avenir Next Cyr';
+      font-weight: 100;
+      line-height: 0.7;
+      
+      bottom: -14px;
+      opacity: .3;
+    }
+    .partners__inner:before {
+      left: 9px;
+    }
+    .partners__inner:after {
+      right: 9px;
+    }
     .partners .section__ttl {
       font-size: 24px;
       text-align: center;
       letter-spacing: 3.5px;
+      margin-bottom: 50px;
     }
     .partners__btn-wrp {
       display: -webkit-flex;
@@ -3806,25 +3835,54 @@ body.inner img {
     width: calc(100%/6);
     position: relative;
     padding: 25px;
+    -webkit-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    opacity: .6;
   }
     .partners__item:before {
       position: absolute;
-      content: '';
-      width: 1px;
-      height: 30px;
-      left: 0px;
-      top: -15px;
-      background-color: #bbb6;
+      content: '+';
+      font-size: 41px;
+      font-family: 'Avenir Next Cyr';
+      font-weight: 100;
+      line-height: 0.7;
+      left: -11px;
+      top: -14px;
+      opacity: .5;
     }
-    .partners__item:after {
+    .partners__item:nth-child(6):after,
+    .partners__item:nth-child(12):after {
       position: absolute;
-      content: '';
-      width: 30px;
-      height: 1px;
-      left: -15px;
-      top: 0px;
-      background-color: #bbb6;
+      content: '+';
+      font-size: 41px;
+      font-family: 'Avenir Next Cyr';
+      font-weight: 100;
+      line-height: 0.7;
+      right: -10px;
+      top: -13px;
+      opacity: .5;
     }
+    .partners__item:nth-child(7):after,
+    .partners__item:nth-child(8):after,
+    .partners__item:nth-child(9):after,
+    .partners__item:nth-child(10):after,
+    .partners__item:nth-child(11):after {
+      position: absolute;
+      content: '+';
+      font-size: 41px;
+      font-family: 'Avenir Next Cyr';
+      font-weight: 100;
+      line-height: 0.7;
+      right: -12px;
+      bottom: -13px;
+      opacity: .5;
+    }
+
     .partners__item-border{
       position: absolute;
       width: 0%;
@@ -3846,6 +3904,13 @@ body.inner img {
       right: 0;
       bottom: 0;
     }
+  .partners__item:hover {
+    -webkit-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+  }
   .partners__item:hover .partners__item-border {
     width: 100%;
     height: 100%;
