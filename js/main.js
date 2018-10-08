@@ -121,4 +121,10 @@ $(function() {
 		prevArrow: $('.slick__arrow-prev_white'),
 		nextArrow: $('.slick__arrow-next_white'),
 	});
+	$('.supply-price__item-more').click(function(){
+		$(this).parent('.supply-price__item').toggleClass('active');
+	});
+	$('.supply-price__item-info-hide').click(function(){
+		$(this).parent().parent('.supply-price__item').toggleClass('active');
+	});
 });

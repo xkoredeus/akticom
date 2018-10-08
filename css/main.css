@@ -4725,7 +4725,230 @@ body.inner img {
 .supply-price__wrp {
   background: url(../img/supply/supply-price__bg.jpg) no-repeat 50% 50% / cover;
 }
+  .supply-tabs__descr {
+    color: #fff;
+  }
+    .supply-tabs__descr-ttl {
+      font-size: 20px;
+      font-family: 'Avenir Next Cyr Bold';
+      text-transform: uppercase;
+      line-height: 1.5;
+      letter-spacing: 2px;
+      color: #fff;
+      margin: 0 0 24px;
+    }
+    .supply-tabs__descr-text {
+      line-height: 1.5;
+      font-family: 'Avenir Next Cyr Regular';
+    }
   .supply-price .section__ttl {
     text-align: center;
     margin-bottom: 50px;
   }
+  .supply-price__item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 120px 25px 55px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+    .supply-price__item-ttl {
+      font-size: 20px;
+      font-family: 'Avenir Next Cyr Bold';
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.5;
+      letter-spacing: 2px;
+      color: #fff;
+      text-shadow: 0px 5px 9px rgba(4, 4, 4, 0.41);
+      position: absolute;
+      width: 100%;
+      height: 85px;
+      left: 0;
+      top: 0;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
+      -ms-align-items: center;
+      align-items: center;
+      z-index: 3;
+    }
+    .supply-price__item-more {
+      font-family: 'Avenir Next Cyr Regular';
+      font-size: 16px;
+      padding-left: 20px;
+      margin-bottom: 40px;
+      position: relative;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      cursor: pointer;
+    }
+    .supply-price__item-more:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+      .supply-price__item-more:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 15px;
+        height: 14px;
+        background: url(../img/supply/supply-price__item-more-img.png) no-repeat 50% 50% / contain;
+      }
+
+    .supply-price__item-value {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+      -ms-align-items: center;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+      .supply-price__item-value span:first-child {
+          font-family: 'Avenir Next Cyr Regular';
+          font-size: 16px;
+          margin-bottom: 10px;
+      }
+      .supply-price__item-value span:last-child {
+          font-family: 'Avenir Next Cyr Bold';
+          font-size: 26px;
+          margin-bottom: 30px;
+      }
+    .supply-price__item-btn {
+      color: #000;
+      background: rgb(155,234,255);
+      background: -moz-linear-gradient(45deg, rgb(155,234,255) 0%, rgb(181,240,255) 100%);
+      background: -webkit-linear-gradient(45deg, rgb(155,234,255) 0%,rgb(181,240,255) 100%);
+      background: linear-gradient(45deg, rgb(155,234,255) 0%,rgb(181,240,255) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9beaff', endColorstr='#b5f0ff',GradientType=1 );
+      border-top: 1px solid #64eeff;
+      -webkit-box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+      margin-bottom: 0;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      position: relative;
+      width: auto;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    .supply-price__item-info {
+      position: absolute;
+      width: 102%;
+      height: 103%;
+      left: 0;
+      top: -330px;
+      padding: 120px 25px 35px;
+      z-index: 2;
+    }
+    .supply-price__item-info-hide {
+      position: relative;
+      color: #000;
+      font-weight: 600;
+      visibility: hidden;
+      padding-left: 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      -webkit-transition: all .1s;
+      -o-transition: all .1s;
+      transition: all .1s;
+    }
+      .supply-price__item-info-hide:before {
+        content: '';
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 2px;
+        width: 15px;
+        height: 14px;
+        background: url(../img/supply/supply-price__item-more-img.png) no-repeat 50% 50% / contain;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+.list_disc {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  padding-left: 20px;
+}
+  .list_disc li {
+    list-style-type: disc;
+  }
+  .list_disc li:not(last-child) {
+    margin-bottom: 10px;
+  }
+      .supply-price__item-info .list_disc{
+        visibility: hidden;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        display: flex;
+        color:  #fff;
+      }
+      .supply-price__item.active .supply-price__item-info {
+        top: 0;
+      }
+      .supply-price__item.active .list_disc,
+      .supply-price__item.active .supply-price__item-info-hide {
+        visibility: visible;
+      }
+      /* .supply-price__item-more:hover ~ .supply-price__item-info */
+    .supply-price__item:nth-child(1) .supply-price__item-info {
+      background: rgb(78,121,181);
+      background: -moz-linear-gradient(-45deg, rgb(78,121,181) 0%, rgb(63,232,244) 100%);
+      background: -webkit-linear-gradient(-45deg, rgb(78,121,181) 0%,rgb(63,232,244) 100%);
+      background: linear-gradient(135deg, rgb(78,121,181) 0%,rgb(63,232,244) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e79b5', endColorstr='#3fe8f4',GradientType=1 );
+    }
+    .supply-price__item:nth-child(2) .supply-price__item-info {
+      background: rgb(93,178,230);
+      background: -moz-linear-gradient(-45deg, rgb(93,178,230) 0%, rgb(146,77,225) 100%);
+      background: -webkit-linear-gradient(-45deg, rgb(93,178,230) 0%,rgb(146,77,225) 100%);
+      background: linear-gradient(135deg, rgb(93,178,230) 0%,rgb(146,77,225) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2e6', endColorstr='#924de1',GradientType=1 );
+    }
+    .supply-price__item:nth-child(3) .supply-price__item-info {
+      background: rgb(156,43,208);
+      background: -moz-linear-gradient(-45deg, rgb(156,43,208) 0%, rgb(85,53,165) 100%);
+      background: -webkit-linear-gradient(-45deg, rgb(156,43,208) 0%,rgb(85,53,165) 100%);
+      background: linear-gradient(135deg, rgb(156,43,208) 0%,rgb(85,53,165) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c2bd0', endColorstr='#5535a5',GradientType=1 );
+    }
