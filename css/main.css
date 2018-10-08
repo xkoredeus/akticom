@@ -4764,6 +4764,14 @@ body.inner img {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
+    -webkit-box-shadow: 0px 14px 39px -5px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 14px 39px -5px rgba(0,0,0,0.28);
+    box-shadow: 0px 14px 39px -5px rgba(0,0,0,0.28);
+  }
+  .supply-price__item:hover {
+    -webkit-box-shadow: 0px 30px 39px -5px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 30px 39px -5px rgba(0,0,0,0.39);
+    box-shadow: 0px 30px 39px -5px rgba(0,0,0,0.39);
   }
     .supply-price__item-ttl {
       font-size: 20px;
@@ -4869,6 +4877,10 @@ body.inner img {
       top: -330px;
       padding: 120px 25px 35px;
       z-index: 2;
+      -webkit-transition: all .6s;
+      -o-transition: all .6s;
+      transition: all .6s;
+      
     }
     .supply-price__item-info-hide {
       position: relative;
@@ -4952,3 +4964,26 @@ body.inner img {
       background: linear-gradient(135deg, rgb(156,43,208) 0%,rgb(85,53,165) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c2bd0', endColorstr='#5535a5',GradientType=1 );
     }
+.supply-direct .section__ttl {
+  text-align: center;
+  font-size: 28px;
+}
+  .supply-direct__item {
+    color: #fff;
+    position: relative;
+  }
+    .supply-direct__item:after {
+      position: absolute;
+      content: '';
+      width: 200px;
+      height: 100px;
+      
+    }
+  .supply-direct__item-num {
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 76px;
+    margin-bottom: 10px;
+  }
+  .supply-direct__item-descr {
+    line-height: 1.5;
+  }
