@@ -3928,6 +3928,571 @@ body.inner img {
         -o-transition: all .3s;
         transition: all .3s;
       }
+
+.alm-offer__wrp {
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+  .case__nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .case__nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+  .case__nav-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .case__nav-item:not(last-child){
+    margin-bottom: 15px;
+  }
+    .case__nav-item span:first-child {
+      margin-right: 18px;
+      padding: 8px 15px;
+      background-color: #000;
+      text-align: center;
+      border-radius: 6px;
+      line-height: 1;
+      position: relative;
+      -webkit-transform: translateX(-40px);
+      -moz-transform: translateX(-40px);
+      -ms-transform: translateX(-40px);
+      -o-transform: translateX(-40px);
+      transform: translateX(-40px);
+      -webkit-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s; 
+      opacity: 0;
+    }
+      .case__nav-item span:first-child:after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        top: 10px;
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+  .case__nav-item:hover span:first-child {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  .alm-offer {
+    color: #fff;
+    margin: 60px auto 0 0;
+    max-width: 430px;
+    padding-bottom: 20px;
+  }
+    .alm-offer__ttl {
+      font-size: 42px;
+      font-family: 'Avenir Next Cyr Bold';
+      line-height: 1.4;
+    }
+    .alm-offer__descr {
+      line-height: 1.4;
+      font-size: 18px;
+      font-family: 'Avenir Next Cyr Regular';
+      margin-bottom: 30px;
+    }
+    .alm-offer__btn {
+      background: -webkit-gradient(linear, right top, left top, from(#4194de), to(#316fd2));
+      background: -webkit-linear-gradient(right, #4194de, #316fd2);
+      background: -o-linear-gradient(right, #4194de, #316fd2);
+      background: linear-gradient(to left, #4194de, #316fd2);
+      border-top: 1px solid #3ad8f7;
+      -webkit-box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+      margin-bottom: 60px;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      padding-left: 26px;
+      position: relative;
+    }
+      .alm-offer__btn:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 20px;
+        left: 16px;
+        top: 18px;
+        background: url(../img/case/slick__arrow-prev_white.png) no-repeat 50% 50% / contain;
+      }
+  .alm-banner {
+    width: 100%;
+    height: 400px;
+  }
+    .alm-banner .alm-banner__img {
+      -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.32);
+      -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.32);
+      box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.32);
+    }
+.alm-info__wrp {
+  font-size: 17px;
+  font-family: 'Avenir Next Cyr Regular';
+  line-height: 1.4;
+  padding: 150px 0 40px;
+  background: url(../img/case/alm/alm__descr-bg.jpg) no-repeat 50% 50% / cover;
+}
+  .alm-info__descr-item:not(last-child) {
+    margin-bottom: 20px;
+  }
+    .alm-info__descr-item-ttl {
+      font-family: 'Avenir Next Cyr Bold';
+      margin-bottom: 4px;
+    }
+  .alm-info__links {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+    .alm-info__links-item {
+      color: #000;
+    }
+    .alm-info__links-item:hover {
+      opacity: .7;
+    }
+  .alm-tasks {
+    font-size: 19px;
+    padding-bottom: 350px;
+  }
+    .alm-tasks .section__ttl {
+      color: #000;
+    }
+.list_string {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+  .list_string li {
+    padding-left: 45px;
+    position: relative;
+  }
+    .list_string li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 32px;
+      height: 1px;
+      background-color: #000;
+
+    }
+    .list_string li:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  .alm-tasks__list {
+    margin-bottom: 40px;
+  }
+  .alm-tasks__banner {
+    position: relative;
+  }
+    .alm-tasks__banner-img {
+      position: absolute;
+      left: 0;
+      right: 0;
+
+    }
+.alm-realize {
+  padding: 250px 0 50px;
+}
+  .alm-realize .section__ttl {
+    color: #000;
+    text-align: center;
+  }
+  .alm-realize .alm-realize__descr {
+    font-size: 17px;
+    font-family: 'Avenir Next Cyr Regular';
+    line-height: 1.4;
+    text-align: center;
+  }
+.alm-project__prototype:before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 801px;
+  top: -52px;
+  left: -26px;
+  background: url(../img/case/alm/alm__project.png) no-repeat 50% 50% / contain; 
+  z-index: 3;
+}
+.alm-project {
+  background-color: #ecedef;
+  border-top: 1px solid #b6bbc1;
+  padding: 100px 0 40px;
+}
+.alm-project .section__ttl {
+  color: #000;
+}
+.alm-project__steps-list {
+  font-size: 17px;
+}
+  .alm-project__steps-list li {
+    padding-left: 25px;
+  }
+  .alm-project__steps-list li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .alm-project__steps-list li:before {
+    width: 15px;
+  }
+.alm-lp {
+  position: relative;
+  z-index: 2;
+  padding: 130px 0 290px;
+  background-color: #17212d;
+}
+  .alm-lp:after {
+    content: '';
+    position: absolute;
+    bottom: -195px;
+    right: -18px;
+    width: 900px;
+    height: 700px;
+    background: url(../img/case/alm/alm__lp-img.png) no-repeat 50% 50% / contain;
+    z-index: 3;
+  }
+  .alm .section__ttl {
+    max-width: 910px
+  }
+  .alm-lp__descr {
+    font-size: 17px;
+    font-family: 'Avenir Next Cyr Regular';
+    line-height: 1.4;
+    color: #fff;
+    max-width: 530px;
+  }
+.alm-rev {
+  padding-top: 250px;
+}
+  .alm-rev__client-cnt {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: -470px;
+    z-index: 3; 
+  }
+    .alm-rev__client-img {
+      width: 262px;
+      height: 356px;
+      background-position: 50% 50%;
+      background-repeat: repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-image: url(../img/case/alm/alm__client-img.jpg);
+      border-radius: 6px;
+      margin-bottom: 35px;
+    }
+    .alm-rev__client-name {
+      font-size: 22px;
+      font-family: 'Avenir Next Cyr Bold';
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+    .alm-rev__client-status {
+      font-family: 'Avenir Next Cyr Regular';
+    }
+    .alm-rev .section__ttl {
+      color: #000;
+    }
+    .alm-rev__descr {
+      font-size: 17px;
+      font-family: 'Avenir Next Cyr Regular';
+      line-height: 1.4;
+    }
+.alm-concept {
+  background: url(../img/case/alm/alm__descr-bg.jpg) no-repeat 50% 50% / cover;
+  position: relative;
+  padding-bottom: 118px;
+}
+  .alm-concept:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    background: url(../img/case/alm/alm__steps-bot-bg.png) no-repeat 50% 0 / cover;
+  }
+  .alm-concept .section__ttl {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .alm-concept_left,
+  .alm-concept_right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    font-family: 'Avenir Next Cyr Regular';
+    font-size: 17px;
+    line-height: 1.4;
+  }
+    .alm-concept__item:not(last-child) {
+      margin-bottom: 30px;
+    }
+  .alm-concept__item {
+    position: relative;
+  }
+    .alm-concept__item span:first-child {
+      position: absolute;
+      font-family: 'Avenir Next Cyr Bold';
+      font-size: 105px;
+      font-style: italic;
+      color: #929294;
+      top: -31px;
+      opacity: 0.5;
+    }
+    .alm-concept_left .alm-concept__item span:first-child {
+      left: -80px;
+    }
+    .alm-concept_right .alm-concept__item span:first-child {
+      right: -80px;
+    }
+      .alm-concept_right .alm-concept__item:first-child span:first-child {
+        top: -58px;
+      }
+.alm-dev {
+  background-color: #ecedef;
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 17px;
+  line-height: 1.4;
+}
+  .alm-dev .section__ttl {
+    color: #000;
+  }
+  .alm-dev_left,
+  .alm-dev_right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+    .alm-dev__item:not(last-child) {
+      margin-bottom: 20px;
+    }
+      .alm-dev__item span:first-child {
+        font-size: 40px;
+        /*font-family: 'Avenir Next Cyr Bold';*/
+      }
+.alm-prom {
+  background: url(../img/case/alm/alm__descr-bg.jpg) no-repeat 50% 50% / cover;
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 17px;
+  line-height: 1.4;
+}
+  .alm-prom .section__ttl {
+    color: #000;
+    line-height: 1.1;
+  }
+.list_circle {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  padding-left: 20px;
+}
+  .list_circle li {
+    list-style-type: circle;
+  }
+  .list_circle li:not(last-child) {
+    margin-bottom: 10px;
+  }
+.alm-stat {
+  background-color: #ecedef;
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 17px;
+  line-height: 1.4;
+}
+  .alm-stat__manager-cnt {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: -150px;
+    z-index: 3; 
+  }
+    .alm-stat__manager-img {
+      width: 262px;
+      height: 266px;
+      background-position: 50% 50%;
+      background-repeat: repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-image: url(../img/case/alm/alm__akti-img.jpg);
+      border-radius: 6px;
+      margin-bottom: 35px;
+    }
+    .alm-stat__manager-name {
+      font-size: 22px;
+      font-family: 'Avenir Next Cyr Bold';
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+    .alm-stat__manager-status {
+      font-family: 'Avenir Next Cyr Regular';
+    }
+  .alm-stat__manager-text {
+    padding-left: 310px;
+    margin-bottom: 100px;
+  }
+  .alm-stat__fig__cnt {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+    .alm-stat__fig-item {
+      text-align: center;
+    }
+      .alm-stat__fig-ttl {
+        color: #1e8ce3;
+        font-family: 'Avenir Next Cyr Bold';
+        font-size: 36px;
+      }
+.alm-feed {
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 17px;
+  line-height: 1.4;
+}
+  .alm-feed .section__ttl {
+    color: #000;
+  }
+    
+  .alm-feed__cnt {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+    .alm-feed_left {
+      max-width: 700px;
+      font-size: 20px;
+    }
+    .alm-feed__descr a {
+      font-size: 20px;
+    }
+    .alm-feed__descr a:hover {
+      opacity: .8;
+    }
+      .alm-feed__descr-mail {
+        color: #000;
+      }
+      .alm-feed__descr-tel {
+        color: #000;
+        text-decoration: none;
+        font-family: 'Avenir Next Cyr Bold';
+      }
+
+      .alm-feed__btn {
+        background: -webkit-gradient(linear, right top, left top, from(#4194de), to(#316fd2));
+        background: -webkit-linear-gradient(right, #4194de, #316fd2);
+        background: -o-linear-gradient(right, #4194de, #316fd2);
+        background: linear-gradient(to left, #4194de, #316fd2);
+        border-top: 1px solid #3ad8f7;
+        -webkit-box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 25px 50px 6px rgba(0, 0, 0, 0.15);
+        margin-bottom: 30px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        position: relative;
+      }
+      .alm-feed__btn:nth-child(2) {
+        margin-bottom: 0;
+      }
+
 .supply-info__wrp {
   background-color: #26223b;
   position: relative;
