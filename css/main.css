@@ -3994,7 +3994,7 @@ body.inner img {
         transition: all .3s;
       }
 
-.alm-offer__wrp {
+.case-offer__wrp {
   position: relative;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -4075,24 +4075,26 @@ body.inner img {
     -o-transform: translateX(0px);
     transform: translateX(0px);
   }
-  .alm-offer {
+  .case-offer {
     color: #fff;
     margin: 60px auto 0 0;
-    max-width: 430px;
     padding-bottom: 20px;
   }
-    .alm-offer__ttl {
+  .case-offer_alm {
+    max-width: 430px;
+  }
+    .case-offer__ttl {
       font-size: 42px;
       font-family: 'Avenir Next Cyr Bold';
       line-height: 1.4;
     }
-    .alm-offer__descr {
+    .case-offer__descr {
       line-height: 1.4;
       font-size: 18px;
       font-family: 'Avenir Next Cyr Regular';
       margin-bottom: 30px;
     }
-    .alm-offer__btn {
+    .case-offer__btn {
       background: -webkit-gradient(linear, right top, left top, from(#4194de), to(#316fd2));
       background: -webkit-linear-gradient(right, #4194de, #316fd2);
       background: -o-linear-gradient(right, #4194de, #316fd2);
@@ -4107,7 +4109,7 @@ body.inner img {
       padding-left: 26px;
       position: relative;
     }
-      .alm-offer__btn:before {
+      .case-offer__btn:before {
         content: '';
         position: absolute;
         width: 15px;
@@ -4116,30 +4118,32 @@ body.inner img {
         top: 18px;
         background: url(../img/case/slick__arrow-prev_white.png) no-repeat 50% 50% / contain;
       }
-  .alm-banner {
+  .case-banner {
     width: 100%;
     height: 400px;
   }
-    .alm-banner .alm-banner__img {
+    /*.case-banner .case-banner__img {
       -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.32);
       -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.32);
       box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.32);
-    }
-.alm-info__wrp {
+    }*/
+.case-info__wrp {
   font-size: 17px;
   font-family: 'Avenir Next Cyr Regular';
   line-height: 1.4;
-  padding: 150px 0 40px;
-  background: url(../img/case/alm/alm__descr-bg.jpg) no-repeat 50% 50% / cover;
+  padding: 170px 0 100px;
 }
-  .alm-info__descr-item:not(last-child) {
+  .case-info__wrp_alm {
+    background: url(../img/case/alm/alm__descr-bg.jpg) no-repeat 50% 50% / cover;
+  }
+  .case-info__descr-item:not(last-child) {
     margin-bottom: 20px;
   }
-    .alm-info__descr-item-ttl {
+    .case-info__descr-item-ttl {
       font-family: 'Avenir Next Cyr Bold';
       margin-bottom: 4px;
     }
-  .alm-info__links {
+  .case-info__links {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -4151,17 +4155,19 @@ body.inner img {
     -o-flex-direction: column;
     flex-direction: column;
   }
-    .alm-info__links-item {
+    .case-info__links-item {
       color: #000;
     }
-    .alm-info__links-item:hover {
+    .case-info__links-item:hover {
       opacity: .7;
     }
-  .alm-tasks {
+  .case-tasks {
     font-size: 19px;
-    padding-bottom: 350px;
   }
-    .alm-tasks .section__ttl {
+  .case-tasks_alm {
+    padding-bottom: 300px;
+  }
+    .case-tasks .section__ttl {
       color: #000;
     }
 .list_string {
@@ -4193,13 +4199,13 @@ body.inner img {
     .list_string li:not(:last-child) {
       margin-bottom: 14px;
     }
-  .alm-tasks__list {
+  .case-tasks__list {
     margin-bottom: 40px;
   }
-  .alm-tasks__banner {
+  .case-tasks__banner {
     position: relative;
   }
-    .alm-tasks__banner-img {
+    .case-tasks__banner-img {
       position: absolute;
       left: 0;
       right: 0;
@@ -4439,13 +4445,13 @@ body.inner img {
   .list_circle li:not(last-child) {
     margin-bottom: 10px;
   }
-.alm-stat {
+.stat {
   background-color: #ecedef;
   font-family: 'Avenir Next Cyr Regular';
   font-size: 17px;
   line-height: 1.4;
 }
-  .alm-stat__manager-cnt {
+  .stat__manager-cnt {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -4461,7 +4467,7 @@ body.inner img {
     top: -150px;
     z-index: 3; 
   }
-    .alm-stat__manager-img {
+    .stat__manager-img {
       width: 262px;
       height: 266px;
       background-position: 50% 50%;
@@ -4472,41 +4478,41 @@ body.inner img {
       border-radius: 6px;
       margin-bottom: 35px;
     }
-    .alm-stat__manager-name {
+    .stat__manager-name {
       font-size: 22px;
       font-family: 'Avenir Next Cyr Bold';
       text-transform: uppercase;
       line-height: 1.4;
     }
-    .alm-stat__manager-status {
+    .stat__manager-status {
       font-family: 'Avenir Next Cyr Regular';
     }
-  .alm-stat__manager-text {
+  .stat__manager-text {
     padding-left: 310px;
     margin-bottom: 100px;
   }
-  .alm-stat__fig__cnt {
+  .stat__fig__cnt {
     max-width: 700px;
     margin: 0 auto;
   }
-    .alm-stat__fig-item {
+    .stat__fig-item {
       text-align: center;
     }
-      .alm-stat__fig-ttl {
+      .stat__fig-ttl {
         color: #1e8ce3;
         font-family: 'Avenir Next Cyr Bold';
         font-size: 36px;
       }
-.alm-feed {
+.feed {
   font-family: 'Avenir Next Cyr Regular';
   font-size: 17px;
   line-height: 1.4;
 }
-  .alm-feed .section__ttl {
+  .feed .section__ttl {
     color: #000;
   }
     
-  .alm-feed__cnt {
+  .feed__cnt {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -4521,26 +4527,26 @@ body.inner img {
     align-items: center;
     justify-content: space-between;
   }
-    .alm-feed_left {
+    .feed_left {
       max-width: 700px;
       font-size: 20px;
     }
-    .alm-feed__descr a {
+    .feed__descr a {
       font-size: 20px;
     }
-    .alm-feed__descr a:hover {
+    .feed__descr a:hover {
       opacity: .8;
     }
-      .alm-feed__descr-mail {
+      .feed__descr-mail {
         color: #000;
       }
-      .alm-feed__descr-tel {
+      .feed__descr-tel {
         color: #000;
         text-decoration: none;
         font-family: 'Avenir Next Cyr Bold';
       }
 
-      .alm-feed__btn {
+      .feed__btn {
         background: -webkit-gradient(linear, right top, left top, from(#4194de), to(#316fd2));
         background: -webkit-linear-gradient(right, #4194de, #316fd2);
         background: -o-linear-gradient(right, #4194de, #316fd2);
@@ -4554,7 +4560,7 @@ body.inner img {
         transition: all .3s;
         position: relative;
       }
-      .alm-feed__btn:nth-child(2) {
+      .feed__btn:nth-child(2) {
         margin-bottom: 0;
       }
 
@@ -5106,3 +5112,210 @@ body.inner img {
     -o-transform: scale(1, 1.2) rotate(-90deg);
     transform: scale(1, 1.2) rotate(-90deg);
   }
+
+.case-info__wrp_int {
+  background-color: #eaeaea;
+}
+.case-tasks__banner-wrp {
+  min-height: 470px;
+  background: url(../img/case/integra/int__spec-bg.jpg) no-repeat 50% 50% / cover;
+}
+  .case-tasks__banner-img_int {
+    top: -170px;
+  }
+.int-project__prototype:before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 701px;
+  top: -32px;
+  left: -26px;
+  background: url(../img/case/integra/int__project.png) no-repeat 50% 50% / contain; 
+  z-index: 3;
+}
+.int-stages {
+  background-color: #eaeaea;
+}
+.int-stages .section__ttl {
+  font-size: 28px;
+  color: #000;
+}
+.section__ttl_black {
+  color: #000;
+}
+  .int_stages__descr {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Avenir Next Cyr Regular';
+  }
+  .int_stages__descr:not(:last-child) {
+    margin-bottom: 20px;
+  }
+.int-project {
+  background-color: #eaeaea;
+  padding-bottom: 150px;
+}
+.int-project .section__ttl {
+  color: #000;
+  font-size: 28px;
+}
+  .int-project__steps-descr {
+    font-size: 17px;
+  }
+  .int-project__steps-descr:not(:last-child) {
+    margin-bottom: 25px;
+  }
+.bold {
+  font-family: 'Avenir Next Cyr Bold';
+}
+.int-rev {
+  position: relative;
+}
+  .int-rev__cnt {
+    max-width: 630px;
+  }
+    .int-rev .section__ttl {
+      color: #000;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    .int-rev__descr {
+      font-size: 16px;
+      font-family: 'Avenir Next Cyr Regular';
+      line-height: 1.4;
+    }
+  .int-rev__client-cnt {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: -200px;
+    z-index: 3; 
+  }
+    .int-rev__client-img {
+      width: 300px;
+      height: 300px;
+      background-position: 50% 50%;
+      background-repeat: repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-image: url(../img/case/integra/int__project-manager.jpg);
+      border-radius: 6px;
+      margin-bottom: 35px;
+    }
+    .int-rev__client-name {
+      font-size: 22px;
+      font-family: 'Avenir Next Cyr Bold';
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+    .int-rev__client-status {
+      font-family: 'Avenir Next Cyr Regular';
+    }
+.int-mobile {
+  background-color: #eaeaea;
+  padding-bottom: 110px;
+}
+  .int-mobile .wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: flex-end;
+    -ms-align-items: center;
+    align-items: center;
+    position: relative;
+  }
+    .int-mobile__img img {
+      position: absolute;
+      left: 0;
+      top: -100px;
+      width: 570px;
+      z-index: 2;
+    }
+    .int-mobile__cnt {
+      max-width: 570px;
+      text-align: right;
+    }
+    .int-mobile__cnt .section__ttl {
+      color: #000;
+      font-size: 23px;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+    .int-mobile__descr {
+      font-family: 'Avenir Next Cyr Regular';
+      font-size: 16px;
+      line-height: 1.4;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+    }
+    .int-mobile__descr span:nth-child(1) {
+      margin-bottom: 20px;
+    }
+.int-adv {
+  background-color: #eaeaea;
+  position: relative;
+  padding: 80px 0 70px;
+}
+  .int-adv:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 687px;
+    height: 692px;
+    background: url(../img/case/integra/int__adv-img.png) no-repeat 50% 50% / contain;
+  }
+  .int-adv .section__ttl {
+    font-size: 23px;
+    padding-left: 200px;
+  }
+  .int-adv__cnt {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    max-width: 500px;
+    margin-bottom: 60px;
+  }
+    .int-adv__item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+      .int-adv__item-ttl {
+        color: #000;
+        font-size: 16px;
+        font-family: 'Avenir Next Cyr Bold';
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        line-height: 1.3;
+      }
+      .int-adv__item-descr  {
+        font-family: 'Avenir Next Cyr Regular';
+        font-size: 16px;
+        line-height: 1.4;
+      }
