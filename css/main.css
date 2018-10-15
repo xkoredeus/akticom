@@ -5325,9 +5325,19 @@ body.inner img {
   background-image: url(../img/supply/supply-price__bg.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 150%;
+  background-size: 150%;
+  position: relative;
 }
+  .dev-info__wrp:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+  }
   .dev-stages {
     padding-top: 0;
   }
@@ -5418,7 +5428,7 @@ body.inner img {
 .dev-price__item {
   z-index: 0;
   position: relative;
-  min-height: 340px;
+  min-height: 270px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
@@ -5468,6 +5478,34 @@ body.inner img {
   background: -webkit-linear-gradient(45deg, rgb(34,82,147) 0%,rgb(20,183,203) 100%);
   background: linear-gradient(45deg, rgb(34,82,147) 0%,rgb(20,183,203) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#225293', endColorstr='#14b7cb',GradientType=1 );
+}
+.dev-price__item:nth-child(3) .dev-price__item-inner {
+  background: rgb(254,89,71);
+  background: -moz-linear-gradient(-45deg, rgba(254,89,71,1) 0%, rgba(255,142,4,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(254,89,71,1) 0%,rgba(255,142,4,1) 100%);
+  background: linear-gradient(135deg, rgba(254,89,71,1) 0%,rgba(255,142,4,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe5947', endColorstr='#ff8e04',GradientType=1 );
+}
+.dev-price__item:nth-child(4) .dev-price__item-inner {
+  background: rgb(250,174,173);
+  background: -moz-linear-gradient(-45deg, rgba(250,174,173,1) 0%, rgba(210,48,189,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(250,174,173,1) 0%,rgba(210,48,189,1) 100%);
+  background: linear-gradient(135deg, rgba(250,174,173,1) 0%,rgba(210,48,189,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faaead', endColorstr='#d230bd',GradientType=1 );
+}
+.dev-price__item:nth-child(5) .dev-price__item-inner {
+  background: rgb(255,196,6);
+  background: -moz-linear-gradient(45deg, rgba(255,196,6,1) 0%, rgba(255,137,19,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(255,196,6,1) 0%,rgba(255,137,19,1) 100%);
+  background: linear-gradient(45deg, rgba(255,196,6,1) 0%,rgba(255,137,19,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc406', endColorstr='#ff8913',GradientType=1 );
+}
+.dev-price__item:nth-child(6) .dev-price__item-inner {
+  background: rgb(87,189,231);
+  background: -moz-linear-gradient(-45deg, rgba(87,189,231,1) 0%, rgba(154,63,224,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(87,189,231,1) 0%,rgba(154,63,224,1) 100%);
+  background: linear-gradient(135deg, rgba(87,189,231,1) 0%,rgba(154,63,224,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57bde7', endColorstr='#9a3fe0',GradientType=1 );
 }
     .dev-price__item-head {
       display: -webkit-flex;
@@ -5709,4 +5747,111 @@ body.inner img {
       .dev-price__item_right.active .dev-price__about {
         left: -106%;
         border-right: 50px solid #fff;
+      }
+.dev-princ .section__ttl {
+  text-align: center;
+}
+  .dev-princ__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+  }
+    .dev-princ__item-ttl {
+      font-family: 'Avenir Next Cyr Bold';
+      font-size: 19px;
+      padding: 0 40px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .dev-princ__item-descr {
+      text-align: center;
+      padding: 35px 20px;
+      border-radius: 6px;
+      color: #000;
+      font-family: 'Avenir Next Cyr Regular';
+      line-height: 1.4;
+      letter-spacing: 1px;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 5px 12px -5px rgba(0,0,0,0.53);
+      -moz-box-shadow: 0px 5px 12px -5px rgba(0,0,0,0.53);
+      box-shadow: 0px 5px 12px -5px rgba(0,0,0,0.53);
+      height: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -ms-align-items: center;
+      align-items: center;
+    }
+    .dev-princ__item:hover .dev-princ__item-descr {
+      -webkit-box-shadow: 0px 12px 28px -5px rgba(0,0,0,0.67);
+      -moz-box-shadow: 0px 12px 28px -5px rgba(0,0,0,0.67);
+      box-shadow: 0px 12px 28px -5px rgba(0,0,0,0.67);
+    }
+.dev-frames {
+  position: relative;
+}
+  .dev-frames .section__ttl {
+    text-align: center;
+  }
+  .dev-frames__cnt {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+    .dev-frames__item {
+      display: -webkit-flex !important;
+      display: -moz-flex !important;
+      display: -ms-flex !important;
+      display: -o-flex !important;
+      display: flex !important;
+      justify-content: center;
+      -ms-align-items: center;
+      align-items: center;
+      border: 1px solid #cfc9da;
+      border-radius: 6px;
+      padding: 25px;
+      height: 88px;
+    }
+    .dev-frames__cnt-nav {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+      -ms-align-items: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      bottom: 85px;
+    }
+    .dev-frames__cnt .slick-slide {
+      padding: 0 15px;
+    } 
+      .dev-frames__cnt-nav span {
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+      .dev-frames__cnt-nav span:hover {
+        -webkit-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        filter: grayscale(0%);
       }

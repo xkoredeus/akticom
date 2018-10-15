@@ -117,6 +117,14 @@ $(function() {
 		prevArrow: $('.slick__arrow-prev_white'),
 		nextArrow: $('.slick__arrow-next_white'),
 	});
+	$(".dev-frames__cnt").slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		prevArrow: $('.slick__arrow-prev_white'),
+		nextArrow: $('.slick__arrow-next_white'),
+	});
 	//Стоимость продвижения
 	$('.supply-price__item-more').click(function(){
 		$(this).parent('.supply-price__item').toggleClass('active');
