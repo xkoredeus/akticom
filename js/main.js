@@ -129,4 +129,11 @@ $(function() {
 	$('.supply-quest__item-ttl').on('click', function(){
 		$(this).parent('.supply-quest__item').toggleClass('active').find('.supply-quest__item-descr').slideToggle('slow');
 	});
+	//Разработка блок с ценами
+	$('.dev-price__item-head-btn').on('click', function() {
+		$(this).parent().parent().parent('.dev-price__item').toggleClass('active');
+	});
+	$('.dev-price__about-close').on('click', function(){
+		$(this).parent().parent('.dev-price__item').removeClass('active');
+	})
 });

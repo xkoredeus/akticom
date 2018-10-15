@@ -5319,3 +5319,394 @@ body.inner img {
         font-size: 16px;
         line-height: 1.4;
       }
+.dev-info__wrp {
+  color: #fff;
+  background-color: #26223d;
+  background-image: url(../img/supply/supply-price__bg.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+  .dev-stages {
+    padding-top: 0;
+  }
+    .dev-stages__descr {
+      line-height: 1.4;
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+    .dev-stages__item {
+      border-radius: 6px;
+      position: relative;
+      /* overflow-x: hidden; */
+      padding-top: 108px;
+    }
+      .dev-stages__item:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -5px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 104px;
+        height: 152px;
+      }
+      .dev-stages__item:nth-child(1):before {
+        background-image: url(../img/development/dev-stages__img_1.png);
+        width: 84px;
+      }
+      .dev-stages__item:nth-child(2):before {
+        background-image: url(../img/development/dev-stages__img_2.png);
+      }
+      .dev-stages__item:nth-child(3):before {
+        background-image: url(../img/development/dev-stages__img_3.png);
+      }
+      .dev-stages__item:nth-child(4):before {
+        background-image: url(../img/development/dev-stages__img_4.png);
+      }
+      .dev-stages__item:nth-child(1):after,
+      .dev-stages__item:nth-child(2):after,
+      .dev-stages__item:nth-child(3):after {
+        content: '';
+        position: absolute;
+        right: -150px;
+        top: 50px;
+        background: url(../img/development/dev-stages__img_arrow.png) no-repeat 50% 50% / contain;
+        width: 150px;
+        height: 11px;
+      }
+      .dev-stages__item-ttl {
+        font-size: 16px;
+        font-family: 'Avenir Next Cyr Bold';
+        line-height: 1.4;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        min-height: 125px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        padding: 25px;
+        background: rgb(251,178,172);
+        background: -moz-linear-gradient(45deg, rgb(251,178,172) 0%, rgb(215,66,186) 100%);
+        background: -webkit-linear-gradient(45deg, rgb(251,178,172) 0%,rgb(215,66,186) 100%);
+        background: linear-gradient(45deg, rgb(251,178,172) 0%,rgb(215,66,186) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbb2ac', endColorstr='#d742ba',GradientType=1 );
+        position: relative;
+        z-index: 2;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+      .dev-stages__item-descr {
+        padding: 25px;
+        color: #000;
+        line-height: 1.5;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        min-height: 200px;
+      }
+.dev-price__item {
+  z-index: 0;
+  position: relative;
+  min-height: 340px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+  .dev-price__item-inner {
+    position: relative;
+    padding: 25px;
+    border-radius: 9px;
+    color: #fff;
+    z-index: 2;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 4px 24px -3px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 4px 24px -3px rgba(0,0,0,0.43);
+    box-shadow: 0px 4px 24px -3px rgba(0,0,0,0.43);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; 
+  }
+    .dev-price__item-inner:hover {
+      -webkit-box-shadow: 0px 15px 50px -9px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 15px 50px -9px rgba(0,0,0,0.5);
+      box-shadow: 0px 15px 50px -9px rgba(0,0,0,0.5);
+    }
+  
+.dev-price__item:nth-child(1) .dev-price__item-inner {
+  background: rgb(156,43,208);
+  background: -moz-linear-gradient(45deg, rgb(156,43,208) 0%, rgb(90,52,168) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(156,43,208) 0%,rgb(90,52,168) 100%);
+  background: linear-gradient(45deg, rgb(156,43,208) 0%,rgb(90,52,168) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c2bd0', endColorstr='#5a34a8',GradientType=1 );
+}
+.dev-price__item:nth-child(2) .dev-price__item-inner {
+  background: rgb(34,82,147);
+  background: -moz-linear-gradient(45deg, rgb(34,82,147) 0%, rgb(20,183,203) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(34,82,147) 0%,rgb(20,183,203) 100%);
+  background: linear-gradient(45deg, rgb(34,82,147) 0%,rgb(20,183,203) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#225293', endColorstr='#14b7cb',GradientType=1 );
+}
+    .dev-price__item-head {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      -ms-align-items: center;
+      align-items: center;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+      .dev-price__item-ttl {
+        font-family: 'Avenir Next Cyr Bold';
+        font-size: 18px;
+        margin-bottom: 5px;
+        display: block;
+      }
+      .dev-price__item-price {
+        font-size: 17px;
+      }
+        .dev-price__item-price span {
+          font-family: 'Avenir Next Cyr Bold';
+          font-size: 22px;
+        }
+      .dev-price__item-head-btn {
+        font-family: 'Avenir Next Cyr Regular';
+        color: #000;
+        padding: 15px 20px;
+        background-color: #fff;
+        border-radius: 6px;
+        -webkit-box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.33);
+        -moz-box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.33);
+        box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.33);
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; 
+        cursor: pointer;
+      }
+        .dev-price__item-head-btn:hover {
+          -webkit-box-shadow: 0px 7px 24px -2px rgba(0,0,0,0.59);
+          -moz-box-shadow: 0px 7px 24px -2px rgba(0,0,0,0.59);
+          box-shadow: 0px 7px 24px -2px rgba(0,0,0,0.59);
+        }
+    .dev-price__item-descr {
+      line-height: 1.5;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .dev-price__item-list {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      -ms-align-items: center;
+      align-items: center;
+    }
+      .dev-price__item-list li {
+        width: 49%;
+        margin-bottom: 6px;
+        text-decoration: underline;
+      }
+  .dev-price__about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 9px;
+    color: #000;
+    z-index: 1;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+  }
+    .dev-price__item_left .dev-price__about {
+      right: 0;
+    }
+    .dev-price__item_right .dev-price__about {
+      left: 0;
+    }
+    .dev-price__about-close {
+      cursor: pointer;
+      position: absolute;
+      top: 4px;
+      left: auto;
+      right: 10px;
+      font-size: 20px;
+      -webkit-transform: scale(1.4, 1);
+      -ms-transform: scale(1.4, 1);
+      -o-transform: scale(1.4, 1);
+      transform: scale(1.4, 1);
+      -webkit-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s;
+    }
+      .dev-price__about-close:hover {
+        -webkit-transform: scale(1.9, 1.5);
+        -ms-transform: scale(1.9, 1.5);
+        -o-transform: scale(1.9, 1.5);
+        transform: scale(1.9, 1.5);
+      }
+    .dev-price__item_right .dev-price__about-close {
+      left: 10px;
+      right: auto;
+    }
+    .dev-price__about-left {
+      width: 49%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: relative;
+    }
+    .dev-price__about-right {
+      width: 49%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+    }
+      .dev-price__about-left-item {
+        font-size: 13px;
+        font-family: 'Avenir Next Cyr Bold';
+        background-color: #cccccc;
+        border-radius: 6px;
+        padding: 5px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin: 4px;
+      }
+      .dev-price__about-left-item_text {
+        background-color: #fff;
+        border: 1px solid #ccc;
+      }
+      .dev-price__about-right-item {
+        font-size: 12px;
+        font-family: 'Avenir Next Cyr Bold';
+        background-color: #cccccc;
+        border-radius: 6px;
+        height: 50px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        padding: 7px 10px 7px 4px;
+        margin-bottom: 8px;
+        position: relative;
+      }
+        .dev-price__about-right-item-num {
+          position: absolute;
+          right: 5px;
+          top: 14px;
+          font-family: 'Avenir Next Cyr Regular';
+          font-size: 19px;
+      }
+      .dev-price__about-right-item:last-child {
+        margin-bottom: 0;
+      }
+        .dev-price__about-right-item span:nth-child(2) {
+          font-size: 12px;
+          font-family: 'Avenir Next Cyr Regular';
+          margin-top: 4px;
+        }
+    .dev-price__item.active {
+      position: relative;
+      z-index: 5;
+    }
+      .dev-price__item.active .dev-price__item-head-btn {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .dev-price__item.active .dev-price__about {
+        -webkit-box-shadow: 0px 4px 50px -9px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 4px 50px -9px rgba(0,0,0,0.5);
+        box-shadow: 0px 4px 50px -9px rgba(0,0,0,0.5);
+        z-index: 1;
+        width: 110%;
+      }
+      .dev-price__item_left.active .dev-price__about {
+        right: -106%;
+        border-left: 50px solid #fff;
+      }
+      .dev-price__item_right.active .dev-price__about {
+        left: -106%;
+        border-right: 50px solid #fff;
+      }
