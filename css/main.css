@@ -6207,11 +6207,11 @@ body.inner img {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8afa9', endColorstr='#d12ebd',GradientType=1 );
   }
     .port__item_blank-3 .port__item-offer {
-      max-width: 333px;
-      padding-left: 129px;
+      max-width: 353px;
+      padding-left: 49px;
       margin-bottom: 28px;
       font-size: 27px;
-      line-height: 1.75;
+      line-height: 1.45;
     }
     .port__item_blank-3:before {
       content: '';
@@ -6222,3 +6222,20 @@ body.inner img {
       left: -435px;
       top: 43px;
     }
+    .port__item-offer-item {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -ms-align-items: center;
+      align-items: center;
+    }
+      .port__item-offer_zoom {
+        margin-right: 18px;
+        font-family: 'Avenir Next Cyr Regular';
+        font-size: 34px;
+      }
+      .port__item-offer-item:nth-child(2) .port__item-offer_zoom {
+        margin-right: 10px;
+      }
