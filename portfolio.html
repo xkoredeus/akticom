@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="" type="image/x-icon">
+
+	<!-- <link rel="stylesheet" href="css/parallax.css"> -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--[if lte IE 8]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body class="inner">
+	<header>
+		<div class="top_head">
+			<div class="wrapper">
+				<a href="" class="link_download"><span>Скачать презентацию</span></a>
+				<a href="" class="link_phone">+7 (927) <span>111 11 11</span></a>
+				<a href="" class="link_mail"><span>sales@aktikom.ru</span></a>
+			</div>
+		</div>
+			<div class="wrap_head">
+				<div class="wrapper">
+					<div class="logo">
+						<a href="index.html"><img src="img/case/logo_black.png" alt="logo.png" /></a>
+					</div>
+					<nav class="menu">
+						<ul>
+							<li><a href="">Главная</a></li>
+							<li class="active"><a href="">Портфолио</a></li>
+							<li><a href="">Услуги</a></li>
+							<li><a href="">Отзывы</a></li>
+							<li><a href="">Прайс</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Бекстейдж</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="port__wrp">
+		<div class="wrapper">
+			<ul class="crumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Портфолио</a></li>
+				<li>Стандарт</li>
+			</ul>
+			<ul class="port-nav">
+				<li><a href="#" class="port-nav__item">Все</a></li>
+				<li><a href="#" class="port-nav__item">Интернет-магазины</a></li>
+				<li><a href="#" class="port-nav__item">Одностраничные сайты</a></li>
+				<li><a href="#" class="port-nav__item">Корпоративные сайты</a></li>
+				<li><a href="#" class="port-nav__item">Мобильные приложения</a></li>
+				<li><a href="#" class="port-nav__item">Продвижение</a></li>
+			</ul>
+			<div class="port__cnt fr">
+				<div class="port__item bx-shd fi-2" style="background-image: url(img/port/port__item-img_1.jpg)">
+					<div class="port__item-info">
+						<div class="port__item-info_left">
+							<div class="port__item-info-ttl">
+								Штрих.ру
+							</div>
+							<div class="port__item-info-descr">
+								Разработка и поддержка сайта рекламно-производственной компании
+							</div>
+						</div>
+						<a href="#" class="port__item-info-btn">
+							<img src="img/port/port__item-more-img.png" alt="port__item-more-img.png">
+						</a>
+					</div>
+				</div>
+				<div class="port__item bx-shd fi-2" style="background-image: url(img/port/port__item-img_2.jpg)">
+					<div class="port__item-info">
+						<div class="port__item-info_left">
+							<div class="port__item-info-ttl">
+								Я Polyглот
+							</div>
+							<div class="port__item-info-descr">
+								Разработка и поддержка сайта лингвистического клуба
+							</div>
+						</div>
+						<a href="#" class="port__item-info-btn">
+							<img src="img/port/port__item-more-img.png" alt="port__item-more-img.png">
+						</a>
+					</div>
+				</div>
+				<div class="port__item port__item_blank port__item_blank-1 bx-shd fi-2">
+					<div class="port__item-offer">
+						<span>Разработка</span> корпоративных сайтов, интернет-магазинов, подключение любых платежных систем, интеграция с 1с
+					</div>
+					<div class="port__item-info">
+						<div class="port__item-info_left">
+							<div class="port__item-info-ttl">
+								Ваш сайт
+							</div>
+						</div>
+						<a href="#" class="port__item-info-btn">
+							Заполнить бриф
+						</a>
+					</div>
+				</div>
+			</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/parallax.min.js"></script>
+	
+	<script>
+
+	var scene_1 = document.getElementById('scene_1');
+	var parallax = new Parallax(scene_1);
+
+	var scene_2 = document.getElementById('scene_2');
+	var parallax = new Parallax(scene_2);
+
+	var scene_3 = document.getElementById('scene_3');
+	var parallax = new Parallax(scene_3);
+
+	var scene_4 = document.getElementById('scene_4');
+	var parallax = new Parallax(scene_4);
+
+	var scene_5 = document.getElementById('scene_5');
+	var parallax = new Parallax(scene_5);
+
+	var scene_6 = document.getElementById('scene_6');
+	var parallax = new Parallax(scene_6);
+
+	var scene_7 = document.getElementById('scene_7');
+	var parallax = new Parallax(scene_7);
+
+	var scene_8 = document.getElementById('scene_8');
+	var parallax = new Parallax(scene_8);
+
+	</script>
+
+	<script>
+	var menu_selector = ".left_menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
+	function onScroll(){
+		var scroll_top = $(document).scrollTop();
+		$(menu_selector + " a").each(function(){
+			var hash = $(this).attr("href");
+			var target = $(hash);
+			if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+				$(menu_selector + " a.active").removeClass("active");
+				$(this).addClass("active");
+			} else {
+				$(this).removeClass("active");
+			}
+		});
+	}
+		$(document).on("scroll", onScroll);
+		$("a[href^=#]").click(function(e){
+			e.preventDefault();
+			$(document).off("scroll");
+			$(menu_selector + " a.active").removeClass("active");
+			$(this).addClass("active");
+			var hash = $(this).attr("href");
+			var target = $(hash);
+			$("html, body").animate({
+			    scrollTop: target.offset().top
+			}, 800, function(){
+				window.location.hash = hash;
+				$(document).on("scroll", onScroll);
+			});
+		});
+	</script>
+
+</body>
+</html>

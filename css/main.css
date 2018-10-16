@@ -5994,3 +5994,180 @@ body.inner img {
         -moz-filter: grayscale(0%);
         filter: grayscale(0%);
       }
+
+.port__wrp {
+  background-color: #eee;
+  padding-bottom: 50px;
+}
+  .port-nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+    .port-nav__item {
+      position: relative;
+      color: #000;
+      font-family: 'Avenir Next Cyr Regular';
+      line-height: 1.4;
+      margin-left: 15px;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+      .port-nav__item:hover {
+        opacity: .8;
+      }
+      .port-nav__item:after {
+        position: absolute;
+        content: '';
+        background-color: #bebebe;
+        width: 1px;
+        height: 100%;
+        right: -36px;
+        top: 1px;
+      }
+      .port-nav li:last-child .port-nav__item:after{
+        display: none;
+      }
+.bx-shd {
+  -webkit-box-shadow: 0px 3px 21px -6px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 3px 21px -6px rgba(0,0,0,0.38);
+  box-shadow: 0px 3px 21px -6px rgba(0,0,0,0.38);
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+  .bx-shd:hover {
+    -webkit-box-shadow: 0px 9px 27px -2px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 9px 27px -2px rgba(0,0,0,0.31);
+    box-shadow: 0px 9px 27px -2px rgba(0,0,0,0.31);
+  }
+  .port__item {
+    min-height: 330px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+    .port__item-info {
+      padding: 23px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+      -ms-align-items: flex-end;
+      align-items: flex-end;
+      background-color: #ffffff8c;
+    }
+      .port__item-info-ttl {
+        font-family: 'Avenir Next Cyr Bold';
+        line-height: 1.4;
+        margin-bottom: 4px;
+      }
+      .port__item-info-descr {
+        font-family: 'Avenir Next Cyr Regular';
+        font-size: 13px;
+        line-height: 1.4;
+      }
+      .port__item-info-btn {
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+      }
+        .port__item-info-btn:hover {
+          -webkit-transform: scale(0.90);
+          -ms-transform: scale(0.90);
+          -o-transform: scale(0.90);
+          transform: scale(0.90);
+        }
+  .port__item_blank .port__item-info {
+    background-color: transparent;
+  }
+  .port__item_blank-1 {
+    background: rgb(18,204,229);
+    background: -moz-linear-gradient(left, rgba(18,204,229,1) 1%, rgba(33,97,168,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(18,204,229,1) 1%,rgba(33,97,168,1) 100%);
+    background: linear-gradient(to right, rgba(18,204,229,1) 1%,rgba(33,97,168,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12cce5', endColorstr='#2161a8',GradientType=1 );
+  }
+    .port__item_blank-1:before {
+      content: '';
+      position: absolute;
+      width: 680px;
+      height: 79px;
+      background: url(../img/port/port__blank_pen.png) no-repeat 50% 50% / contain;
+      right: 60px;
+      top: 30px;
+        
+    }
+  .btn_prime,
+  .port__item_blank .port__item-info-btn {
+    font-family: 'Avenir Next Cyr Regular';
+    color: #000;
+    padding: 15px 23px;
+    background-color: #fff;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.33);
+    box-shadow: 0px 6px 15px -2px rgba(0,0,0,0.33);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+    .port__item_blank .port__item-info-btn {
+      font-family: 'Avenir Next Cyr Bold';
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 3px;
+    }
+    .btn_prime:hover,
+    .port__item_blank .port__item-info-btn:hover {
+      -webkit-box-shadow: 0px 7px 24px -2px rgba(0,0,0,0.59);
+      -moz-box-shadow: 0px 7px 24px -2px rgba(0,0,0,0.59);
+      box-shadow: 0px 7px 24px -2px rgba(0,0,0,0.59);
+    }
+    .port__item_blank .port__item-info-btn:hover {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+    .port__item_blank .port__item-info-ttl {
+      color: #fff;
+      text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.43);
+    }
+    .port__item_blank .port__item-offer {
+      font-size: 20px;
+      line-height: 1.4;
+      color: #fff;
+      padding: 23px;
+    }
+    .port__item_blank .port__item-offer span {
+      font-family: 'Avenir Next Cyr Bold';
+    }
