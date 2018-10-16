@@ -6222,7 +6222,7 @@ body.inner img {
       left: -435px;
       top: 43px;
     }
-    .port__item-offer-item {
+    .port__item-offer-cnt {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
@@ -6236,6 +6236,6 @@ body.inner img {
         font-family: 'Avenir Next Cyr Regular';
         font-size: 34px;
       }
-      .port__item-offer-item:nth-child(2) .port__item-offer_zoom {
+      .port__item-offer-cnt:nth-child(2) .port__item-offer_zoom {
         margin-right: 10px;
       }
