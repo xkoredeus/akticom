@@ -6115,7 +6115,6 @@ body.inner img {
   .port__item_blank .port__item-info {
     background-color: transparent;
   }
-<<<<<<< HEAD
   .port__item_blank-1 {
     background: rgb(18,204,229);
     background: -moz-linear-gradient(left, rgba(18,204,229,1) 1%, rgba(33,97,168,1) 100%);
@@ -6132,8 +6131,7 @@ body.inner img {
       right: 60px;
       top: 30px;
     }
-=======
->>>>>>> refs/remotes/origin/master
+
   .btn_prime,
   .port__item_blank .port__item-info-btn {
     font-family: 'Avenir Next Cyr Regular';
