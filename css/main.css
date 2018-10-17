@@ -5999,6 +5999,11 @@ body.inner img {
   background-color: #eee;
   padding-bottom: 50px;
 }
+  .port__wrp .crumbs a,
+  .port__wrp .crumbs li,
+  .port__wrp .crumbs li:not(:last-child):after {
+    color: #000;
+  }
   .port-nav {
     display: -webkit-flex;
     display: -moz-flex;
@@ -6024,6 +6029,9 @@ body.inner img {
       margin-right: 15px;
       text-decoration: none;
     }
+      .port-nav__item.active {
+        font-family: 'Avenir Next Cyr Bold';
+      }
       .port-nav__item:hover {
         opacity: .8;
       }
@@ -6053,7 +6061,7 @@ body.inner img {
     box-shadow: 0px 9px 27px -2px rgba(0,0,0,0.31);
   }
   .port__item {
-    min-height: 330px;
+    min-height: 360px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -6107,6 +6115,7 @@ body.inner img {
   .port__item_blank .port__item-info {
     background-color: transparent;
   }
+<<<<<<< HEAD
   .port__item_blank-1 {
     background: rgb(18,204,229);
     background: -moz-linear-gradient(left, rgba(18,204,229,1) 1%, rgba(33,97,168,1) 100%);
@@ -6123,6 +6132,8 @@ body.inner img {
       right: 60px;
       top: 30px;
     }
+=======
+>>>>>>> refs/remotes/origin/master
   .btn_prime,
   .port__item_blank .port__item-info-btn {
     font-family: 'Avenir Next Cyr Regular';
@@ -6170,3 +6181,80 @@ body.inner img {
     .port__item_blank .port__item-offer span {
       font-family: 'Avenir Next Cyr Bold';
     }
+
+  .port__item_blank-1 {
+    background: rgb(18,204,229);
+    background: -moz-linear-gradient(left, rgba(18,204,229,1) 1%, rgba(33,97,168,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(18,204,229,1) 1%,rgba(33,97,168,1) 100%);
+    background: linear-gradient(to right, rgba(18,204,229,1) 1%,rgba(33,97,168,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12cce5', endColorstr='#2161a8',GradientType=1 );
+  }
+    .port__item_blank-1:before {
+      content: '';
+      position: absolute;
+      width: 680px;
+      height: 79px;
+      background: url(../img/port/port__blank_pen.png) no-repeat 50% 50% / contain;
+      right: 60px;
+      top: 30px;
+    }
+  .port__item_blank-2 {
+    background: rgb(254,61,106);
+    background: -moz-linear-gradient(left, rgba(254,61,106,1) 0%, rgba(255,106,50,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(254,61,106,1) 0%,rgba(255,106,50,1) 100%);
+    background: linear-gradient(to right, rgba(254,61,106,1) 0%,rgba(255,106,50,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe3d6a', endColorstr='#ff6a32',GradientType=1 );
+  }
+    .port__item_blank-2:before {
+      content: '';
+      position: absolute;
+      width: 600px;
+      height: 169px;
+      background: url(../img/port/port__blank_car.png) no-repeat 50% 50% / contain;
+      right: -210px;
+      top: 90px;
+    }
+    .port__item_blank-2 .port__item-offer {
+      max-width: 320px;
+      margin-bottom: 25px;
+    }
+  .port__item_blank-3 {
+    background: rgb(248,175,169);
+    background: -moz-linear-gradient(-45deg, rgb(248,175,169) 0%, rgb(209,46,189) 47%, rgb(209,46,189) 100%);
+    background: -webkit-linear-gradient(-45deg, rgb(248,175,169) 0%,rgb(209,46,189) 47%,rgb(209,46,189) 100%);
+    background: linear-gradient(135deg, rgb(248,175,169) 0%,rgb(209,46,189) 47%,rgb(209,46,189) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8afa9', endColorstr='#d12ebd',GradientType=1 );
+  }
+    .port__item_blank-3 .port__item-offer {
+      max-width: 353px;
+      padding-left: 49px;
+      margin-bottom: 28px;
+      font-size: 27px;
+      line-height: 1.45;
+    }
+    .port__item_blank-3:before {
+      content: '';
+      position: absolute;
+      width: 593px;
+      height: 454px;
+      background: url(../img/port/port__blank_loupe.png) no-repeat 50% 50% / contain;
+      left: -435px;
+      top: 43px;
+    }
+    .port__item-offer-cnt {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -ms-align-items: center;
+      align-items: center;
+    }
+      .port__item-offer_zoom {
+        margin-right: 18px;
+        font-family: 'Avenir Next Cyr Regular';
+        font-size: 34px;
+      }
+      .port__item-offer-cnt:nth-child(2) .port__item-offer_zoom {
+        margin-right: 10px;
+      }
