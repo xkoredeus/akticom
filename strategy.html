@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="" type="image/x-icon">
 
 	<!-- <link rel="stylesheet" href="css/parallax.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -117,135 +118,298 @@
 		<div class="wrapper">
 			<h3 class="section__ttl">10 этапов развития бизнеса в интернете</h3>
 			<div class="strat-evo__cnt fr">
-				<div class="strat-evo__item">
+				<a href="#strat-evo__popup_1" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						1
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_1.png)">
 						Анализ рынка и конкурентов
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_2" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						2
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_2.png)">
 						Разработка бренд - платформы
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_3" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						3
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_3.png)">
 						Выявление целевой аудитории и ее сегментация
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_4" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						4
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_4.png)">
 						Упаковка продуктовой линейки
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_5" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						5
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_5.png)">
 						Прототипирование сайта и построение сценариев касания пользователя
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_6" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						6
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_5.png)">
 						Создание дизайна сайта и дополнительных элементов
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_7" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						7
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_4.png)">
 						Верстка посадочных страниц
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_8" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						8
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_3.png)">
 						Создание каналов трафика и рекламы
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_9" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						9
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_2.png)">
 						Аналитика и сегментация
 					</div>
-				</div>
-				<div class="strat-evo__item">
+				</a>
+				<a href="#strat-evo__popup_10" class="strat-evo__item" data-fancybox="stars">
 					<div class="strat-evo__item-num">
 						10
 					</div>
 					<div class="strat-evo__item-cnt" style="background-image: url(img/strat/strat__star-img_1.png)">
 						SEO-оптимизация сайта
 					</div>
-				</div>
+				</a>
 			</div>
+			<div class="strat-evo__popups-list">
+				<!-- Popup 1 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_1" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">1</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 1 -->
+				<!-- Popup 2 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_2" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">2</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 2 -->
+				<!-- Popup 3 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_3" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">3</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 3 -->
+				<!-- Popup 4 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_4" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">4</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 4 -->
+				<!-- Popup 5 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_5" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">5</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 5 -->
+				<!-- Popup 6 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_6" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">6</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 6 -->
+				<!-- Popup 7 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_7" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">7</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 7 -->
+				<!-- Popup 8 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_8" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">8</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 8 -->
+				<!-- Popup 9 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_9" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">9</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 9 -->
+				<!-- Popup 10 -->
+				<div style="display: none;" class="strat-evo__popups-list-item">
+					<div id="strat-evo__popup_10" class="strat-evo__popup">
+						<div class="strat-evo__popup-num">10</div>
+						<div class="strat-evo__popup-cnt">
+							<div class="strat-evo__popup-ttl">
+								Выявление целевой аудитории и ее сегментация
+							</div>
+							<ul class="strat-evo__popup-list list_string">
+								<li>Описание целевой аудитории</li>
+								<li>Выявление типовых представителей аудиторных груп</li>
+								<li>Выбор маркетинговых триггеров для каждой группы аудиторий</li>
+								<li>Выявление болей целевых аудиторий для формирования продуктовой линейки и офферов</li>
+							</ul>
+						</div>
+							
+					</div>
+				</div>
+				<!-- / Popup 10 -->
+			</div>
+				
 		</div>
 	</section>
-	<section class="design__feedback section_inner">
+	<section class="strat-adv section_inner">
 		<div class="wrapper">
-			<div class="design__feedback-wrapper fr">
-				<form class="design__feedback-item fi-2">
-					<h5 class="design__feedback-item-ttl">Чтобы обсудить проект, вы можете связаться с нами</h5>
-					<div class="design__feedback-item-subttl">
-						мы на связи с 9 до 18 кроме сб и вс, отвечаем в течении 10 минут
-					</div>
-					<input type="text" class="feedback__input" name="design__feedback-name" placeholder="Ваше имя">
-					<input type="tel" class="feedback__input" name="design__feedback-tel" placeholder="Ваш телефон">
-					<input type="email" class="feedback__input" name="design__feedback-email" placeholder="Ваш e-mail">
-					<div class="design__feedback-radios">
-						<label for="design__feedback-radio_1" class="feedback__radio-wrp">
-							<input type="radio" class="feedback__radio" name="design__feedback-radio" id="design__feedback-radio_1">
-							<div class="feedback__radio-text">
-								Ответить по e-mail
-							</div>
-						</label>
-						<label for="design__feedback-radio_2" class="feedback__radio-wrp">
-							<input type="radio" class="feedback__radio" name="design__feedback-radio" id="design__feedback-radio_2">
-							<div class="feedback__radio-text">
-								Ответить по телефону
-							</div>
-						</label>
-					</div>
-					<input type="submit" class="feedback__submit btn" name="design__feedback-submit" value="Отправить запрос">
-
-				</form>
-				<div class="design__feedback-item design__feedback-item_breef fi-2">
-					<div class="design__feedback-item_breef-cnt">
-						<h5 class="design__feedback-item-ttl">Готовы заполнить бриф?</h5>
-						<div class="design__feedback-item-descr">
-							И получить коммерческое предложение на создание нового дизайна для вашего сайта
-						</div>
-						<div class="design__feedback-item-subttl">
-							перейдите на страницу <br>
-							вам понадобится на заполнение 10-15 минут
-						</div>
-					</div>
-					<a href="#" class="btn feedback__submit ">Заполнить бриф</a>
+			<h3 class="section__ttl">Преимущества Актиком</h3>
+			<div class="strat-adv__cnt fr">
+				<div class="strat-adv__item bx-shd fi-2">
+					<div class="strat-adv__item-ttl">Команда экспертов</div>
+					<div class="strat-adv__item-descr">Наше основное преимущество команда экспертов, опыт каждого сотрудника внутри команды от 8 лет</div>
 				</div>
-			</div>
-
-			<div class="design__feedback-info">
-				Нужна более подробная информация об услуге? <br>
-				Позвоните нам: <a href="tel:79271111111">+7 (927) 111-11-11</a> Самара
+				<div class="strat-adv__item bx-shd fi-2">
+					<div class="strat-adv__item-ttl">Широкий спектр услуг</div>
+					<div class="strat-adv__item-descr">В нашей команде есть специалситы самых разных направлений - от программирования до веб-аналитики</div>
+				</div>
+				<div class="strat-adv__item bx-shd fi-2">
+					<div class="strat-adv__item-ttl">Клиентский сервис</div>
+					<div class="strat-adv__item-descr">Отличаемся высокой вовлеченностью в бизнес клиента. Принимаем активное участие в проекте.</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -348,8 +512,10 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/libs.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- <script src="js/libs.min.js"></script> -->
 	<script src="js/slick.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/parallax.min.js"></script>
 	
