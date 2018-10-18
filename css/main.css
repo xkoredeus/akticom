@@ -6805,6 +6805,8 @@ body.inner img {
     background-color: transparent !important;
     padding: 0 !important;
     position: relative;
+    overflow-x: hidden;
+    
   }
     .strat-evo__popup-num {
       top: 160px;
